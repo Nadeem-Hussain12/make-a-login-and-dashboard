@@ -1,0 +1,228 @@
+html{
+    font-size: 60%;
+ }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+body{
+    color: #fff;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+a{
+    color: #fff;
+    text-decoration: none;
+ }
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url("cofee.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container::after{
+    background-color: rgba(0, 0, 0, 0.705);
+    top: 0;
+    left: 0;
+    content:'';
+    position: relative;
+   
+}
+.box-shape{
+    width: 450px;
+    height: 90vh;
+    background-color: rgba(0, 0, 0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  
+}
+.content{
+    width: 90%;
+    height: 90%;
+    
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.icon i{
+    color: #222;
+    font-size: 24px;
+    padding-inline: 7px;
+}
+.user{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.user input{
+    width: 95%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size:20px ;
+    
+}
+.password input{
+        width: 95%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    
+}
+
+.main-heading{
+        text-align: center;
+        letter-spacing: 3px;
+}
+.main-heading h1{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+.forgot{
+        margin-top: 15px;
+        margin-bottom: 15px;
+}
+.forgot:hover{
+       text-decoration: underline;
+       
+       
+}
+.login{
+        width: 100%;
+        text-align: center;
+        height: 40px;
+        font-size: 18px;
+        background-color: rgb(3, 114, 179);
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.login button{
+        width: 100%;
+        text-align: center;
+        height: 40px;
+        font-size: 18px;
+        background-color: rgb(3, 114, 179);
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+}
+.login button:hover{
+        font-size: 18px;
+        background-color: rgb(76, 137, 172);
+}
+.or{
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+    
+}
+    .social-ic{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+}
+.social-ic button{
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        font-size: 18px;
+}
+.facebook{
+        width: 50%;
+}
+.facebook button{
+        width: 98%;
+        background-color: rgb(48, 48, 190);
+        border: none;
+        color: #fff;
+        border-radius: 10px;
+}
+.facebook button:hover{
+        background-color: rgb(11, 11, 185);
+}
+.instagram{
+        width: 50%;
+}
+.instagram button{
+        width: 98%;
+        color: #fff;
+        background-color: rgb(167, 11, 107);
+        border: none;
+        border-radius: 10px;
+}
+.instagram button:hover{
+        background-color: rgb(121, 5, 5);
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.signup a{
+        color: rgb(0, 119, 255);
+    
+}
+.signup a:hover{
+        text-decoration: underline;
+       
+}
+@media(max-width:350px){
+        body{
+            font-size: 15px;
+           
+        }
+        .box-shape{
+            width: 100%;
+            height: 100vh;
+        }
+        .icon input{
+            font-size: 15px;
+        }
+        .login a{
+            font-size: 15px;
+        }
+       
+        .social-ic{
+            flex-direction: column;
+            width: 100%;
+        }
+        .facebook{
+            font-size: 15px;
+            width: 100%;
+            
+        }
+        .instagram{
+            font-size: 15px;
+            width: 100%;
+            margin-top: 10px;
+            
+        }
+        .signup a{
+            display: block;
+            text-align: center;
+            padding: 5px;
+        }
+    }
+
